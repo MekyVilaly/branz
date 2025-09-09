@@ -80,7 +80,7 @@
     "gift_wrap": "gift-wrap",
     "cart_shipping_rates_calculator": true,
     "cart_discount_codes": true,
-    "footer_layout": "footer-1",
+    "footer_layout": "footer-2",
     "help_chat": "",
     "show_review": true,
     "product_label_style": "label-depend-on-button",
@@ -610,6 +610,30 @@
           "show_products_all": true,
           "show_wishlist": true,
           "show_my_account": true
+        }
+      },
+      "footer-2": {
+        "type": "footer-2",
+        "settings": {
+          "container": "container",
+          "back_to_top": true,
+          "show_border_top": false,
+          "remove_on_homepage": false,
+          "remove_on_inner_page": false,
+          "copyright": "<p>Copyright © Branz all rights reserved. Powered by BranzTech.</p>",
+          "show_country": true,
+          "show_language": true,
+          "payment_icons_width": 300,
+          "show_social_links": false,
+          "footer-heading-size": 18,
+          "footer_background_color": "#ffffff",
+          "footer_title_color": "#111111",
+          "footer_text_color": "#555555",
+          "footer_link_color": "#111111",
+          "footer_link_color_hover": "#111111",
+          "footer_border_color": "#ebebeb",
+          "footer_bottom_background_color": "#ffffff",
+          "footer_bottom_text_color": "#555555"
         }
       }
     },
