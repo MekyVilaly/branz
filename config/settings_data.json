@@ -288,14 +288,14 @@
           "text_color": "#2c3e50",
           "text_hover_color": "#ff6b6b",
           "show_mobile": false,
-          "show_phone_number": true,
-          "show_email": true,
+          "show_phone_number": false,
+          "show_email": false,
           "show_social": false,
           "show_country": true,
           "show_language": true,
           "show_store_page": true,
           "show_message": true,
-          "message": "<p>👍   Sign up for 10% off your first order: <a href=\"/account/\" title=\"/account/\"><span style=\"text-decoration:underline\"><strong>Sign Up</strong></span></a></p>"
+          "message": "<p>🤑   Sign up for 30% off your first order <a href=\"/account/\" title=\"/account/\"><span style=\"text-decoration:underline\"><strong>Sign Up</strong></span></a></p>"
         }
       },
       "horizontal-menu": {
