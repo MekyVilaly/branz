@@ -300,6 +300,46 @@
       },
       "horizontal-menu": {
         "type": "horizontal-menu",
+        "blocks": {
+          "single_link_PhBE3x": {
+            "type": "single_link",
+            "settings": {
+              "title": "Home",
+              "url": "/",
+              "open_link": false,
+              "label": "",
+              "icon_font": "",
+              "icon_width_image": 50
+            }
+          },
+          "single_link_RRiEgp": {
+            "type": "single_link",
+            "settings": {
+              "title": "New arrivals 🔥",
+              "url": "shopify://collections/new-arrivals",
+              "open_link": false,
+              "label": "",
+              "icon_font": "",
+              "icon_width_image": 50
+            }
+          },
+          "single_link_4nKLHN": {
+            "type": "single_link",
+            "settings": {
+              "title": "Hot sale ⚡",
+              "url": "shopify://collections/hot-sale",
+              "open_link": false,
+              "label": "",
+              "icon_font": "",
+              "icon_width_image": 50
+            }
+          }
+        },
+        "block_order": [
+          "single_link_PhBE3x",
+          "single_link_RRiEgp",
+          "single_link_4nKLHN"
+        ],
         "settings": {
           "m_animation": "up_to_down",
           "label1": "Hot",
