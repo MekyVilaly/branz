@@ -1,0 +1,246 @@
+/* Fashion Store Color Palette - Vibrant & Modern */
+
+:root {
+  /* Primary Brand Colors - Fashion Forward */
+  --fashion-primary: #FF6B6B;        /* Coral Red - Energetic & Bold */
+  --fashion-primary-light: #FF8E8E;  /* Light Coral */
+  --fashion-primary-dark: #E55A5A;   /* Dark Coral */
+  
+  /* Secondary Colors - Trendy & Fresh */
+  --fashion-secondary: #4ECDC4;      /* Teal - Modern & Fresh */
+  --fashion-secondary-light: #7EDDD6; /* Light Teal */
+  --fashion-secondary-dark: #3BA39C;  /* Dark Teal */
+  
+  /* Accent Colors - Vibrant & Eye-catching */
+  --fashion-accent-1: #FFE66D;       /* Golden Yellow - Luxury */
+  --fashion-accent-2: #A8E6CF;       /* Mint Green - Fresh */
+  --fashion-accent-3: #FFB3BA;       /* Soft Pink - Feminine */
+  --fashion-accent-4: #B19CD9;       /* Lavender - Elegant */
+  --fashion-accent-5: #FFD93D;       /* Bright Yellow - Energetic */
+  
+  /* Neutral Colors - Sophisticated */
+  --fashion-neutral-1: #2C3E50;      /* Dark Blue-Gray - Professional */
+  --fashion-neutral-2: #34495E;      /* Medium Blue-Gray */
+  --fashion-neutral-3: #7F8C8D;      /* Light Gray */
+  --fashion-neutral-4: #BDC3C7;      /* Very Light Gray */
+  --fashion-neutral-5: #ECF0F1;      /* Off White */
+  
+  /* Background Colors */
+  --fashion-bg-primary: #FFFFFF;     /* Pure White */
+  --fashion-bg-secondary: #F8F9FA;   /* Light Gray */
+  --fashion-bg-accent: #FFF5F5;      /* Very Light Pink */
+  --fashion-bg-dark: #1A1A1A;        /* Dark Background */
+  
+  /* Text Colors */
+  --fashion-text-primary: #2C3E50;   /* Dark Blue-Gray */
+  --fashion-text-secondary: #7F8C8D; /* Medium Gray */
+  --fashion-text-light: #BDC3C7;     /* Light Gray */
+  --fashion-text-white: #FFFFFF;     /* White */
+  
+  /* Status Colors */
+  --fashion-success: #27AE60;        /* Green - Success */
+  --fashion-warning: #F39C12;        /* Orange - Warning */
+  --fashion-error: #E74C3C;          /* Red - Error */
+  --fashion-info: #3498DB;           /* Blue - Info */
+  
+  /* Gradient Colors */
+  --fashion-gradient-1: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  --fashion-gradient-2: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
+  --fashion-gradient-3: linear-gradient(135deg, #A8E6CF 0%, #4ECDC4 100%);
+  --fashion-gradient-4: linear-gradient(135deg, #B19CD9 0%, #FFB3BA 100%);
+  --fashion-gradient-5: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+  
+  /* Shadow Colors */
+  --fashion-shadow-light: rgba(255, 107, 107, 0.1);
+  --fashion-shadow-medium: rgba(255, 107, 107, 0.2);
+  --fashion-shadow-dark: rgba(44, 62, 80, 0.3);
+  
+  /* Border Colors */
+  --fashion-border-light: rgba(255, 107, 107, 0.2);
+  --fashion-border-medium: rgba(255, 107, 107, 0.4);
+  --fashion-border-dark: rgba(44, 62, 80, 0.6);
+}
+
+/* Color Utility Classes */
+.fashion-bg-primary { background-color: var(--fashion-primary) !important; }
+.fashion-bg-secondary { background-color: var(--fashion-secondary) !important; }
+.fashion-bg-accent-1 { background-color: var(--fashion-accent-1) !important; }
+.fashion-bg-accent-2 { background-color: var(--fashion-accent-2) !important; }
+.fashion-bg-accent-3 { background-color: var(--fashion-accent-3) !important; }
+.fashion-bg-accent-4 { background-color: var(--fashion-accent-4) !important; }
+.fashion-bg-accent-5 { background-color: var(--fashion-accent-5) !important; }
+
+.fashion-text-primary { color: var(--fashion-primary) !important; }
+.fashion-text-secondary { color: var(--fashion-secondary) !important; }
+.fashion-text-accent-1 { color: var(--fashion-accent-1) !important; }
+.fashion-text-accent-2 { color: var(--fashion-accent-2) !important; }
+.fashion-text-accent-3 { color: var(--fashion-accent-3) !important; }
+.fashion-text-accent-4 { color: var(--fashion-accent-4) !important; }
+.fashion-text-accent-5 { color: var(--fashion-accent-5) !important; }
+
+/* Gradient Backgrounds */
+.fashion-gradient-1 { background: var(--fashion-gradient-1) !important; }
+.fashion-gradient-2 { background: var(--fashion-gradient-2) !important; }
+.fashion-gradient-3 { background: var(--fashion-gradient-3) !important; }
+.fashion-gradient-4 { background: var(--fashion-gradient-4) !important; }
+.fashion-gradient-5 { background: var(--fashion-gradient-5) !important; }
+
+/* Fashion-specific Button Styles */
+.fashion-btn-primary {
+  background: var(--fashion-gradient-1);
+  color: var(--fashion-text-white);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--fashion-shadow-light);
+}
+
+.fashion-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--fashion-shadow-medium);
+  color: var(--fashion-text-white);
+}
+
+.fashion-btn-secondary {
+  background: var(--fashion-gradient-3);
+  color: var(--fashion-text-primary);
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px var(--fashion-shadow-light);
+}
+
+.fashion-btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--fashion-shadow-medium);
+  color: var(--fashion-text-primary);
+}
+
+/* Fashion Card Styles */
+.fashion-card {
+  background: var(--fashion-bg-primary);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px var(--fashion-shadow-light);
+  transition: all 0.3s ease;
+  border: 1px solid var(--fashion-border-light);
+}
+
+.fashion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px var(--fashion-shadow-medium);
+}
+
+/* Fashion Badge Styles */
+.fashion-badge {
+  background: var(--fashion-gradient-2);
+  color: var(--fashion-text-white);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Fashion Section Backgrounds */
+.fashion-section-bg-1 {
+  background: linear-gradient(135deg, var(--fashion-bg-accent) 0%, var(--fashion-bg-primary) 100%);
+}
+
+.fashion-section-bg-2 {
+  background: var(--fashion-gradient-1);
+  color: var(--fashion-text-white);
+}
+
+.fashion-section-bg-3 {
+  background: var(--fashion-gradient-3);
+  color: var(--fashion-text-primary);
+}
+
+/* Fashion Typography */
+.fashion-heading {
+  background: var(--fashion-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.fashion-subheading {
+  color: var(--fashion-text-secondary);
+  font-weight: 500;
+}
+
+/* Fashion Animations */
+@keyframes fashionPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.fashion-pulse {
+  animation: fashionPulse 2s infinite;
+}
+
+@keyframes fashionSlideIn {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.fashion-slide-in {
+  animation: fashionSlideIn 0.6s ease-out;
+}
+
+/* Fashion Hover Effects */
+.fashion-hover-lift {
+  transition: all 0.3s ease;
+}
+
+.fashion-hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px var(--fashion-shadow-medium);
+}
+
+.fashion-hover-glow {
+  transition: all 0.3s ease;
+}
+
+.fashion-hover-glow:hover {
+  box-shadow: 0 0 30px var(--fashion-shadow-medium);
+}
+
+/* Fashion Border Styles */
+.fashion-border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              var(--fashion-gradient-1) border-box;
+}
+
+/* Fashion Text Effects */
+.fashion-text-gradient {
+  background: var(--fashion-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fashion-text-shadow {
+  text-shadow: 2px 2px 4px var(--fashion-shadow-light);
+}
+
+/* Fashion Spacing */
+.fashion-spacing-sm { margin: 10px; }
+.fashion-spacing-md { margin: 20px; }
+.fashion-spacing-lg { margin: 30px; }
+
+.fashion-padding-sm { padding: 10px; }
+.fashion-padding-md { padding: 20px; }
+.fashion-padding-lg { padding: 30px; }

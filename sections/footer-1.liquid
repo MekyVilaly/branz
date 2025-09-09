@@ -39,23 +39,33 @@
     assign active_collapse = 'unactive'
   endif
 -%}
-<footer class="footer {{ has_bg }} {% if remove_on_homepage != blank %}remove-space-homepage{% endif %} {% if remove_on_inner_page != blank %}remove-space-innerpage{% endif %}" style=" --footer-background-color : {{ bg_color }};
-  --footer-heading-color : {{ heading_color }};
-  --footer-text-color: {{ text_color }};
-  --footer-link-color : {{ link_color }};
-  --footer-link-hover-color : {{ link_color_hover }};
-  --footer-bottom-background--color : {{ bg_bottom_color }};
-  --footer-bottom-text-color : {{ text_bottom_color }};
-  --border-color-base : {{ border_color }};">
+<footer class="footer {{ has_bg }} {% if remove_on_homepage != blank %}remove-space-homepage{% endif %} {% if remove_on_inner_page != blank %}remove-space-innerpage{% endif %}"   style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); 
+  border-top: 5px solid #3b82f6; 
+  min-height: 400px; 
+  margin-top: 5rem; 
+  box-shadow: 0 -10px 30px rgba(15, 23, 42, 0.3);
+  --footer-background-color : #0f172a;
+  --footer-heading-color : #60a5fa;
+  --footer-text-color: #cbd5e1;
+  --footer-link-color : #cbd5e1;
+  --footer-link-hover-color : #3b82f6;
+  --footer-bottom-background--color : #1e293b;
+  --footer-bottom-text-color : #94a3b8;
+  --border-color-base : #3b82f6;">
   {%- if st.back_to_top != blank -%}
-    <div class="back-top fixed right-30 rounded box-shadow width-50 height-50 flex content-center z-5 pointer">
+    <div class="back-top fixed right-30 rounded box-shadow width-50 height-50 flex content-center z-5 pointer" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); 
+          border-radius: 50%; 
+          width: 60px; 
+          height: 60px; 
+          box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4); 
+          transition: all 0.3s ease;">
         <span id="bls__back-top">
         </span>
         <i class=" icon-chevrons-up fs-18 text-white"></i>
     </div>
   {%- endif -%}
   {%- if blocks.size > 0 -%}
-    <div class="bls__footer-middle {% if st.show_border_top != blank %}show_border_top{% endif %}">
+    <div class="bls__footer-middle {% if st.show_border_top != blank %}show_border_top{% endif %}" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(15px); padding: 2rem 0; margin: 1rem 0;">
       <div class="{{ container }}">
         <div class="row">
           {%- for block in blocks -%}
@@ -211,9 +221,9 @@
       </div>
     </div>
   {%- endif -%}
-  <div class="bls__footer-bottom">
+  <div class="bls__footer-bottom" style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(20px); border-top: 2px solid #3b82f6; margin-top: 3rem; min-height: 80px;">
     <div class="{{ container }}">
-      <div class="flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-20 pb-10 py-lg-30 border-top">
+      <div class="flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-20 pb-10 py-lg-30 border-top" style="border-top: 1px solid rgba(59, 130, 246, 0.3) !important;">
         {%- if show_language or show_country -%}
           <div class="lang-curentcy flex flex-nowrap col-md">
             {%- liquid

@@ -23,7 +23,14 @@
 {%- if show_topbar -%}
   <div
     class="topbar border-bottom {% if show_phone_number or show_email or show_social or show_store_page or show_language or show_country or show_message %} {% endif %} {% if show_mobile == blank %}d-none-mb{% endif %}"
-    style="{%- if color_topbar != blank -%} --topbar-color: {{ color_topbar }};{%- endif -%}{%- if color_hover_topbar != blank -%} --topbar-hover-color: {{ color_hover_topbar }};{%- endif -%}{%- if bg_topbar != blank -%}--topbar-bg: {{ bg_topbar }};{%- endif -%}"
+    style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #4a5568 100%); 
+            border: none; 
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); 
+            min-height: 50px; 
+            padding: 1rem 0;
+            --topbar-color: #ffffff;
+            --topbar-hover-color: #e2e8f0;
+            --topbar-bg: #1a202c;"
   >
     <div class="topbar__section">
       <div class="{{ container }} d-flex flex-wrap justify-content-between align-items-center topbar__section-inner">

@@ -27,8 +27,12 @@
   class="page-header h-{{ transparent_class }} {{ transparent_topbar_class }}"
   data-sticky="{{ enable_sticky }}"
   data-sticky-mobile="{{ sticky_mobile }}"
+  style="background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%); 
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); 
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+          min-height: 120px;"
 >
-  <div class="header-container {{ header_layout }}">
+  <div class="header-container {{ header_layout }}" style="background: transparent; padding: 1rem 0;">
     {%- liquid
       section 'top-bar'
     -%}
@@ -36,6 +40,7 @@
       <div
         class="header-middle {{ transparent_class }}"
         id="sticky-header"
+        style="background: transparent; padding: 2rem 0; min-height: 80px;"
       >
         {%- case header_layout -%}
           {%- when 'h_layout1' -%}
@@ -200,6 +205,30 @@
     </div>
   </div>
 </header>
+
+<script>
+// Force header to maintain gray gradient when scrolling
+document.addEventListener('DOMContentLoaded', function() {
+  function forceHeaderStyling() {
+    const stickyHeader = document.getElementById('sticky-header');
+    const pageHeader = document.querySelector('.page-header');
+    
+    if (stickyHeader) {
+      stickyHeader.style.background = 'linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%)';
+      stickyHeader.style.backgroundColor = 'transparent';
+    }
+    
+    if (pageHeader) {
+      pageHeader.style.background = 'linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%)';
+    }
+  }
+  
+  // Run immediately and on scroll
+  forceHeaderStyling();
+  window.addEventListener('scroll', forceHeaderStyling);
+  setInterval(forceHeaderStyling, 100);
+});
+</script>
 
 <script type="application/ld+json">
   {

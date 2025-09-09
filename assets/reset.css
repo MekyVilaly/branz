@@ -1,4 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
 :root {
+  /* Fashion Typography */
+  --fashion-font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --fashion-font-heading: 'Playfair Display', Georgia, serif;
+  
+  /* Fashion Color Palette */
+  --fashion-primary: #FF6B6B;
+  --fashion-secondary: #4ECDC4;
+  --fashion-accent-1: #FFE66D;
+  --fashion-accent-2: #A8E6CF;
+  --fashion-accent-3: #FFB3BA;
+  --fashion-accent-4: #B19CD9;
+  --fashion-accent-5: #FFD93D;
+  --fashion-neutral-1: #2C3E50;
+  --fashion-neutral-2: #34495E;
+  --fashion-neutral-3: #7F8C8D;
+  --fashion-neutral-4: #BDC3C7;
+  --fashion-neutral-5: #ECF0F1;
+  
+  /* Fashion Gradients */
+  --fashion-gradient-1: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  --fashion-gradient-2: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
+  --fashion-gradient-3: linear-gradient(135deg, #A8E6CF 0%, #4ECDC4 100%);
+  --fashion-gradient-4: linear-gradient(135deg, #B19CD9 0%, #FFB3BA 100%);
+  --fashion-gradient-5: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%);
+  
+  /* Updated Theme Variables */
   --bls-transition: all 0.4s;
   --btn-line-height: inherit;
   --btn-text-transform: uppercase;
@@ -7,8 +35,8 @@
   --font-h5: 2rem;
   --font-h6: 1.6rem;
   --base-line-height: 1.75;
-  --grey-color: #919191;
-  --light-grey-color: #f5f5f5;
+  --grey-color: var(--fashion-neutral-3);
+  --light-grey-color: var(--fashion-neutral-5);
   --heading-line-height: 1.3;
   --page-tile-padding-desktop: 6rem;
   --page-tile-padding-mobile: 4rem;
@@ -17,26 +45,26 @@
   --input-color: var(--base-color);
   --input-font-size: 1.4rem;
   --input-padding: 1rem 2rem;
-  --input-border-color: #dedede;
+  --input-border-color: var(--fashion-neutral-4);
   --input-height: 45px;
   --input-border-radius: var(--btn-border-radius);
-  --input-placeholder-color: #999999;
+  --input-placeholder-color: var(--fashion-neutral-3);
   --font-icon: "blueskytechco";
   --full-width-padding: 3rem;
   --bls-transform: scale(1.08);
-  --bls-box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  --bls-box-shadow: 0 5px 30px rgba(255, 107, 107, 0.1);
 
-  --overlay-bg: rgba(0, 0, 0, 0.5);
+  --overlay-bg: rgba(44, 62, 80, 0.5);
   --animation-uptodown: animateUpToDown 0.35s ease;
   --animation-downtoup: animateDownToUp 0.35s ease;
   --animation-fading: animateFading 0.35s ease;
   --transition-popup: all 0.5s;
   --header-padding: 15px;
 
-  --swiper-theme-color: #111;
-  --swiper-pagination-bullet-inactive-colorrgba: #111111;
+  --swiper-theme-color: var(--fashion-primary);
+  --swiper-pagination-bullet-inactive-colorrgba: var(--fashion-neutral-3);
   --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-color: #111111;
+  --swiper-pagination-color: var(--fashion-primary);
 
   --swiper-navigation-size: 16px;
 
@@ -50,10 +78,10 @@
   --bls__product-price-color: var(--base-color);
   --bls__product-price-weight: var(--heading-font-weight);
 
-  --bls__product-price-sale-color: #757575;
+  --bls__product-price-sale-color: var(--fashion-neutral-3);
   --bls__product-price-sale-weight: var(--base-font-weight);
 
-  --bls__product-rate-color: #212529;
+  --bls__product-rate-color: var(--fashion-neutral-1);
   --bls__product-transition: 0.4s;
 
   --bls_product-item-vertical-space: clamp(3rem, 4.6vw, 4rem);
@@ -65,6 +93,1359 @@
 
   --swiper-arrow-width: 4rem;
   --swiper-arrow-height: 4rem;
+  
+  /* Fashion Store Enhanced Effects */
+  --fashion-shadow-soft: 0 10px 30px rgba(255, 107, 107, 0.15);
+  --fashion-shadow-medium: 0 15px 40px rgba(78, 205, 196, 0.2);
+  --fashion-shadow-strong: 0 20px 50px rgba(44, 62, 80, 0.25);
+  --fashion-glow-coral: 0 0 20px rgba(255, 107, 107, 0.4);
+  --fashion-glow-teal: 0 0 20px rgba(78, 205, 196, 0.4);
+  --fashion-glow-yellow: 0 0 20px rgba(255, 230, 109, 0.4);
+  
+  /* Fashion Store Background Gradients */
+  --fashion-bg-gradient-1: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #FFE66D 100%);
+  --fashion-bg-gradient-2: linear-gradient(135deg, #A8E6CF 0%, #FFB3BA 50%, #B19CD9 100%);
+  --fashion-bg-gradient-3: linear-gradient(135deg, #FFD93D 0%, #FF6B6B 50%, #4ECDC4 100%);
+  --fashion-bg-gradient-4: linear-gradient(135deg, #2C3E50 0%, #34495E 50%, #7F8C8D 100%);
+  
+  /* Fashion Store Text Gradients */
+  --fashion-text-gradient-1: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  --fashion-text-gradient-2: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
+  --fashion-text-gradient-3: linear-gradient(135deg, #A8E6CF 0%, #B19CD9 100%);
+}
+
+/* Fashion Store Enhanced Styles */
+.fashion-gradient-bg-1 {
+  background: var(--fashion-bg-gradient-1);
+}
+
+.fashion-gradient-bg-2 {
+  background: var(--fashion-bg-gradient-2);
+}
+
+.fashion-gradient-bg-3 {
+  background: var(--fashion-bg-gradient-3);
+}
+
+.fashion-gradient-bg-4 {
+  background: var(--fashion-bg-gradient-4);
+}
+
+.fashion-text-gradient-1 {
+  background: var(--fashion-text-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fashion-text-gradient-2 {
+  background: var(--fashion-text-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fashion-text-gradient-3 {
+  background: var(--fashion-text-gradient-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.fashion-shadow-soft {
+  box-shadow: var(--fashion-shadow-soft);
+}
+
+.fashion-shadow-medium {
+  box-shadow: var(--fashion-shadow-medium);
+}
+
+.fashion-shadow-strong {
+  box-shadow: var(--fashion-shadow-strong);
+}
+
+.fashion-glow-coral {
+  box-shadow: var(--fashion-glow-coral);
+}
+
+.fashion-glow-teal {
+  box-shadow: var(--fashion-glow-teal);
+}
+
+.fashion-glow-yellow {
+  box-shadow: var(--fashion-glow-yellow);
+}
+
+/* Enhanced Button Styles */
+.btn-primary.fashion-enhanced {
+  background: var(--fashion-gradient-1);
+  border: none;
+  box-shadow: var(--fashion-shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.btn-primary.fashion-enhanced:hover {
+  background: var(--fashion-gradient-2);
+  box-shadow: var(--fashion-shadow-medium);
+  transform: translateY(-2px);
+}
+
+.btn-secondary.fashion-enhanced {
+  background: transparent;
+  border: 2px solid var(--fashion-primary);
+  color: var(--fashion-primary);
+  box-shadow: var(--fashion-shadow-soft);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary.fashion-enhanced:hover {
+  background: var(--fashion-primary);
+  color: white;
+  box-shadow: var(--fashion-glow-coral);
+  transform: translateY(-2px);
+}
+
+/* Enhanced Product Cards */
+.bls__product-item.fashion-enhanced {
+  box-shadow: var(--fashion-shadow-soft);
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.bls__product-item.fashion-enhanced:hover {
+  box-shadow: var(--fashion-shadow-medium);
+  transform: translateY(-5px);
+}
+
+/* Enhanced Section Headings */
+.bls__section-heading.fashion-enhanced {
+  background: var(--fashion-text-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* Enhanced Navigation */
+.bls__menu-item.fashion-enhanced {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bls__menu-item.fashion-enhanced::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--fashion-gradient-1);
+  transition: width 0.3s ease;
+}
+
+.bls__menu-item.fashion-enhanced:hover::after {
+  width: 100%;
+}
+
+/* Enhanced Announcement Bar */
+.announcement-bar.fashion-enhanced {
+  background: var(--fashion-gradient-1);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enhanced Footer */
+.footer.fashion-enhanced {
+  background: var(--fashion-gradient-4);
+  color: white;
+}
+
+.footer.fashion-enhanced .footer-link:hover {
+  color: var(--fashion-secondary);
+  text-shadow: var(--fashion-glow-teal);
+}
+
+/* Enhanced Typography */
+.fashion-heading-1 {
+  background: var(--fashion-text-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.fashion-heading-2 {
+  background: var(--fashion-text-gradient-2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.fashion-heading-3 {
+  background: var(--fashion-text-gradient-3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.fashion-accent-text {
+  color: var(--fashion-primary);
+  font-weight: 600;
+}
+
+.fashion-secondary-text {
+  color: var(--fashion-secondary);
+  font-weight: 500;
+}
+
+.fashion-highlight-text {
+  background: var(--fashion-gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Enhanced Link Styles */
+.fashion-link {
+  color: var(--fashion-primary);
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.fashion-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--fashion-gradient-1);
+  transition: width 0.3s ease;
+}
+
+.fashion-link:hover {
+  color: var(--fashion-secondary);
+}
+
+.fashion-link:hover::after {
+  width: 100%;
+}
+
+/* Enhanced Price Display */
+.fashion-price {
+  color: var(--fashion-primary);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.fashion-price-sale {
+  color: var(--fashion-secondary);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.fashion-price-original {
+  color: var(--fashion-neutral-3);
+  text-decoration: line-through;
+  font-size: 0.9em;
+}
+
+/* Enhanced Badge Styles */
+.fashion-badge {
+  background: var(--fashion-gradient-1);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: var(--fashion-shadow-soft);
+}
+
+.fashion-badge-sale {
+  background: var(--fashion-gradient-2);
+}
+
+.fashion-badge-new {
+  background: var(--fashion-gradient-3);
+}
+
+.fashion-badge-hot {
+  background: var(--fashion-gradient-4);
+  color: white;
+}
+
+/* Colorful Fashion Store Overrides */
+body {
+  background: var(--fashion-bg-gradient-1) !important;
+  background-attachment: fixed !important;
+}
+
+/* Colorful Header */
+.header {
+  background: var(--fashion-gradient-2) !important;
+  box-shadow: var(--fashion-shadow-medium) !important;
+}
+
+/* Colorful Main Content Areas */
+.main-content {
+  background: var(--fashion-bg-gradient-3) !important;
+}
+
+/* Colorful Product Cards */
+.bls__product-item {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+  transition: all 0.3s ease !important;
+}
+
+.bls__product-item:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: var(--fashion-shadow-strong) !important;
+}
+
+/* Colorful Sections */
+.bls__section {
+  background: var(--fashion-bg-gradient-2) !important;
+  margin: 2rem 0 !important;
+  padding: 3rem 0 !important;
+  border-radius: 25px !important;
+}
+
+.bls__section:nth-child(even) {
+  background: var(--fashion-bg-gradient-1) !important;
+}
+
+.bls__section:nth-child(odd) {
+  background: var(--fashion-bg-gradient-3) !important;
+}
+
+/* Colorful Containers */
+.container, .container-fluid {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  margin: 1rem 0 !important;
+}
+
+/* Colorful Navigation */
+.navbar, .header-nav {
+  background: var(--fashion-gradient-1) !important;
+  box-shadow: var(--fashion-shadow-medium) !important;
+}
+
+/* Colorful Sidebar */
+.sidebar, .vertical-menu {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Forms */
+.form-control, input, textarea, select {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid var(--fashion-primary) !important;
+  border-radius: 15px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Cards */
+.card, .bls__card {
+  background: var(--fashion-bg-gradient-2) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--fashion-shadow-medium) !important;
+  border: none !important;
+}
+
+/* Colorful Modals */
+.modal, .popup {
+  background: var(--fashion-bg-gradient-1) !important;
+  border-radius: 25px !important;
+  box-shadow: var(--fashion-shadow-strong) !important;
+}
+
+/* Colorful Tables */
+table {
+  background: var(--fashion-bg-gradient-3) !important;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+
+/* Colorful Lists */
+ul, ol {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 15px !important;
+  padding: 1.5rem !important;
+}
+
+/* Colorful Breadcrumbs */
+.breadcrumb {
+  background: var(--fashion-gradient-2) !important;
+  border-radius: 20px !important;
+  padding: 1rem 2rem !important;
+}
+
+/* Colorful Pagination */
+.pagination {
+  background: var(--fashion-bg-gradient-1) !important;
+  border-radius: 20px !important;
+  padding: 1rem !important;
+}
+
+/* Colorful Alerts */
+.alert {
+  background: var(--fashion-bg-gradient-2) !important;
+  border-radius: 15px !important;
+  border: none !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Badges */
+.badge {
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Dropdowns */
+.dropdown-menu {
+  background: var(--fashion-bg-gradient-3) !important;
+  border-radius: 15px !important;
+  box-shadow: var(--fashion-shadow-medium) !important;
+  border: none !important;
+}
+
+/* Colorful Tabs */
+.nav-tabs {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 20px 20px 0 0 !important;
+}
+
+.tab-content {
+  background: var(--fashion-bg-gradient-2) !important;
+  border-radius: 0 0 20px 20px !important;
+}
+
+/* Colorful Accordions */
+.accordion {
+  background: var(--fashion-bg-gradient-1) !important;
+  border-radius: 20px !important;
+}
+
+.accordion-item {
+  background: var(--fashion-bg-gradient-3) !important;
+  border-radius: 15px !important;
+  margin: 0.5rem 0 !important;
+}
+
+/* Colorful Progress Bars */
+.progress {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 20px !important;
+  height: 20px !important;
+}
+
+.progress-bar {
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 20px !important;
+}
+
+/* Colorful Tooltips */
+.tooltip {
+  background: var(--fashion-bg-gradient-2) !important;
+  border-radius: 10px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Spinners */
+.spinner {
+  border-color: var(--fashion-primary) !important;
+}
+
+/* Colorful Dividers */
+hr {
+  border-color: var(--fashion-primary) !important;
+  border-width: 3px !important;
+  border-radius: 5px !important;
+}
+
+/* Colorful Blockquotes */
+blockquote {
+  background: var(--fashion-bg-gradient-3) !important;
+  border-left: 5px solid var(--fashion-primary) !important;
+  border-radius: 15px !important;
+  padding: 1.5rem !important;
+}
+
+/* Colorful Code Blocks */
+code, pre {
+  background: var(--fashion-bg-gradient-4) !important;
+  border-radius: 10px !important;
+  padding: 1rem !important;
+}
+
+/* Colorful Images */
+img {
+  border-radius: 15px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* Colorful Videos */
+video {
+  border-radius: 20px !important;
+  box-shadow: var(--fashion-shadow-medium) !important;
+}
+
+/* Colorful Iframes */
+iframe {
+  border-radius: 15px !important;
+  box-shadow: var(--fashion-shadow-soft) !important;
+}
+
+/* ========================================
+   COMPLETELY NEW STYLISH HEADER DESIGN
+   ======================================== */
+
+/* Modern Page Header Container */
+.page-header {
+  background: var(--fashion-gradient-1) !important;
+  backdrop-filter: blur(20px) !important;
+  border-bottom: 3px solid var(--fashion-primary) !important;
+  box-shadow: 0 10px 40px rgba(255, 107, 107, 0.3) !important;
+  position: relative !important;
+  z-index: 1000 !important;
+  transition: all 0.3s ease !important;
+  min-height: 120px !important;
+}
+
+/* Header with floating effect */
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(255, 107, 107, 0.1) 0%, 
+    rgba(78, 205, 196, 0.1) 50%, 
+    rgba(255, 230, 109, 0.1) 100%) !important;
+  border-radius: 0 0 30px 30px !important;
+  z-index: -1 !important;
+}
+
+/* Modern Header Container */
+.header-container {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 0 0 25px 25px !important;
+  padding: 1rem 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Modern Top Bar */
+.topbar {
+  background: var(--fashion-gradient-2) !important;
+  border: none !important;
+  border-radius: 0 0 20px 20px !important;
+  box-shadow: 0 5px 20px rgba(168, 230, 207, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 50px !important;
+  padding: 1rem 0 !important;
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.2), 
+    transparent) !important;
+  animation: shimmer 3s infinite !important;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Modern Header Middle */
+.header-middle {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 20px !important;
+  padding: 2rem 0 !important;
+  margin: 1rem 0 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  min-height: 80px !important;
+}
+
+/* Modern Logo Design */
+.header__normal-logo, .site-logo, .text-logo {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2)) !important;
+  transition: all 0.3s ease !important;
+  border-radius: 15px !important;
+  padding: 10px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.header__normal-logo:hover, .site-logo:hover, .text-logo:hover {
+  transform: scale(1.05) rotate(2deg) !important;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4) !important;
+}
+
+/* Modern Navigation */
+.navigation, .main-nav, .horizontal-list {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 25px !important;
+  padding: 1rem 2rem !important;
+  position: relative !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Modern Menu Items */
+.horizontal-list li, .menu-item {
+  position: relative !important;
+  margin: 0 0.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.horizontal-list li a, .menu-item a {
+  color: var(--fashion-neutral-1) !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 20px !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  background: transparent !important;
+  text-decoration: none !important;
+}
+
+.horizontal-list li a::before, .menu-item a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 20px !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+  z-index: -1 !important;
+}
+
+.horizontal-list li a:hover::before, .menu-item a:hover::before {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+}
+
+.horizontal-list li a:hover, .menu-item a:hover {
+  color: white !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4) !important;
+}
+
+/* Modern Search Bar */
+.search-form, .search-input, .top-search-toggle {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid var(--fashion-primary) !important;
+  border-radius: 25px !important;
+  padding: 1rem 2rem !important;
+  box-shadow: 0 5px 20px rgba(255, 107, 107, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.search-form:focus, .search-input:focus, .top-search-toggle:focus {
+  border-color: var(--fashion-secondary) !important;
+  box-shadow: 0 10px 30px rgba(78, 205, 196, 0.4) !important;
+  transform: scale(1.02) !important;
+}
+
+/* Modern Cart Icon */
+.cart-icon, .header-cart, #cart-icon-bubble {
+  background: var(--fashion-gradient-3) !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 10px 30px rgba(255, 230, 109, 0.4) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.cart-icon::before, .header-cart::before, #cart-icon-bubble::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fashion-gradient-1) !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+  border-radius: 50% !important;
+}
+
+.cart-icon:hover::before, .header-cart:hover::before, #cart-icon-bubble:hover::before {
+  opacity: 1 !important;
+}
+
+.cart-icon:hover, .header-cart:hover, #cart-icon-bubble:hover {
+  transform: scale(1.1) rotate(10deg) !important;
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6) !important;
+}
+
+/* Modern Account Icon */
+.account-icon, .user-icon, .header__icon--account {
+  background: var(--fashion-gradient-4) !important;
+  border-radius: 50% !important;
+  width: 45px !important;
+  height: 45px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 25px rgba(177, 156, 217, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.account-icon:hover, .user-icon:hover, .header__icon--account:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 12px 35px rgba(177, 156, 217, 0.6) !important;
+}
+
+/* Modern Mobile Menu Button */
+.mobile-menu-btn, .hamburger, .nav-toggle {
+  background: var(--fashion-gradient-1) !important;
+  border: none !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.mobile-menu-btn:hover, .hamburger:hover, .nav-toggle:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5) !important;
+}
+
+/* Header Column Styling */
+.col-header-left, .col-header-center, .col-header-right {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  margin: 0.5rem !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ========================================
+   COMPLETELY NEW STYLISH FOOTER DESIGN
+   ======================================== */
+
+/* Modern Footer Container */
+.footer {
+  background: var(--fashion-gradient-4) !important;
+  border-top: 5px solid var(--fashion-primary) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin-top: 5rem !important;
+  min-height: 400px !important;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(44, 62, 80, 0.9) 0%, 
+    rgba(52, 73, 94, 0.9) 50%, 
+    rgba(127, 140, 141, 0.9) 100%) !important;
+  z-index: 1 !important;
+}
+
+.footer > * {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Modern Footer Sections */
+.footer-section, .footer-block, .widget {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 25px !important;
+  padding: 2rem !important;
+  margin: 1rem 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.footer-section::before, .footer-block::before, .widget::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.1), 
+    transparent) !important;
+  transition: all 0.5s ease !important;
+}
+
+.footer-section:hover::before, .footer-block:hover::before, .widget:hover::before {
+  left: 100% !important;
+}
+
+.footer-section:hover, .footer-block:hover, .widget:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--fashion-primary) !important;
+}
+
+/* Modern Footer Headings */
+.footer h3, .footer h4, .footer-title, .widget-title {
+  color: var(--fashion-secondary) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+  margin-bottom: 1.5rem !important;
+  position: relative !important;
+  padding-bottom: 1rem !important;
+}
+
+.footer h3::after, .footer h4::after, .footer-title::after, .widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 2px !important;
+}
+
+/* Modern Footer Links */
+.footer a, .footer-link, .footer ul li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  padding: 0.5rem 0 !important;
+  display: inline-block !important;
+}
+
+.footer a::before, .footer-link::before, .footer ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--fashion-gradient-1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.footer a:hover, .footer-link:hover, .footer ul li a:hover {
+  color: var(--fashion-secondary) !important;
+  transform: translateX(10px) !important;
+}
+
+.footer a:hover::before, .footer-link:hover::before, .footer ul li a:hover::before {
+  width: 100% !important;
+}
+
+/* Modern Footer Bottom */
+.bls__footer-bottom {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(20px) !important;
+  border-top: 2px solid var(--fashion-primary) !important;
+  border-radius: 25px 25px 0 0 !important;
+  margin-top: 3rem !important;
+  position: relative !important;
+  min-height: 80px !important;
+}
+
+.bls__footer-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 25px 25px 0 0 !important;
+}
+
+/* Modern Back to Top Button */
+.back-top {
+  background: var(--fashion-gradient-1) !important;
+  border-radius: 50% !important;
+  width: 60px !important;
+  height: 60px !important;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4) !important;
+  transition: all 0.3s ease !important;
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  z-index: 1000 !important;
+}
+
+.back-top:hover {
+  transform: scale(1.1) translateY(-5px) !important;
+  box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6) !important;
+}
+
+.back-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fashion-gradient-2) !important;
+  border-radius: 50% !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.back-top:hover::before {
+  opacity: 1 !important;
+}
+
+/* Modern Social Media Icons */
+.social-media-links a, .footer .social-media-links a {
+  background: var(--fashion-gradient-3) !important;
+  border-radius: 50% !important;
+  width: 50px !important;
+  height: 50px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin: 0 0.5rem !important;
+  box-shadow: 0 8px 25px rgba(255, 230, 109, 0.3) !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+}
+
+.social-media-links a:hover, .footer .social-media-links a:hover {
+  transform: scale(1.1) rotate(10deg) !important;
+  box-shadow: 0 12px 35px rgba(255, 230, 109, 0.5) !important;
+}
+
+/* Modern Payment Icons */
+.payment-icon, .footer .payment-icon {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Modern Newsletter Signup */
+.newsletter-form, .footer .newsletter-form {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 25px !important;
+  padding: 2rem !important;
+  border: 2px solid var(--fashion-primary) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.newsletter-form::before, .footer .newsletter-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--fashion-gradient-1) !important;
+  opacity: 0.1 !important;
+  z-index: -1 !important;
+}
+
+.newsletter-input, .footer .newsletter-input {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 2px solid var(--fashion-secondary) !important;
+  border-radius: 25px !important;
+  padding: 1rem 2rem !important;
+  color: var(--fashion-neutral-1) !important;
+  transition: all 0.3s ease !important;
+}
+
+.newsletter-input:focus, .footer .newsletter-input:focus {
+  border-color: var(--fashion-primary) !important;
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3) !important;
+  transform: scale(1.02) !important;
+}
+
+.newsletter-btn, .footer .newsletter-btn {
+  background: var(--fashion-gradient-1) !important;
+  border: none !important;
+  border-radius: 25px !important;
+  padding: 1rem 2rem !important;
+  color: white !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3) !important;
+}
+
+.newsletter-btn:hover, .footer .newsletter-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 35px rgba(255, 107, 107, 0.5) !important;
+}
+
+/* Footer Lists */
+.footer ul, .footer ol {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-radius: 15px !important;
+  padding: 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer ul li, .footer ol li {
+  padding: 0.5rem 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.footer ul li:last-child, .footer ol li:last-child {
+  border-bottom: none !important;
+}
+
+/* Header Text and Icons - Make Everything White and Visible */
+#page-header, .page-header {
+  color: white !important;
+}
+
+#page-header * {
+  color: white !important;
+}
+
+#page-header .text-logo,
+#page-header .header__normal-logo,
+#page-header .site-logo,
+#page-header .logo,
+.page-header .text-logo,
+.page-header .header__normal-logo,
+.page-header .site-logo,
+.page-header .logo,
+#sticky-header .text-logo,
+#sticky-header .header__normal-logo,
+#sticky-header .site-logo,
+#sticky-header .logo,
+.header-middle .text-logo,
+.header-middle .header__normal-logo,
+.header-middle .site-logo,
+.header-middle .logo {
+  filter: brightness(0) invert(1) !important;
+}
+
+#page-header .header_search .top-search-toggle,
+#page-header .header_account .header__icon--account,
+#page-header .bls__header-wishlist .wishlist-icon-bubble,
+#page-header .header_minicart #cart-icon-bubble,
+#page-header .nav-toggle,
+#page-header .toggle-menu,
+#page-header .horizontal-list a,
+#page-header .menu-item a,
+#page-header .navigation a,
+#sticky-header .header_search .top-search-toggle,
+#sticky-header .header_account .header__icon--account,
+#sticky-header .bls__header-wishlist .wishlist-icon-bubble,
+#sticky-header .header_minicart #cart-icon-bubble,
+#sticky-header .nav-toggle,
+#sticky-header .toggle-menu,
+#sticky-header .horizontal-list a,
+#sticky-header .menu-item a,
+#sticky-header .navigation a,
+.header-middle .header_search .top-search-toggle,
+.header-middle .header_account .header__icon--account,
+.header-middle .bls__header-wishlist .wishlist-icon-bubble,
+.header-middle .header_minicart #cart-icon-bubble,
+.header-middle .nav-toggle,
+.header-middle .toggle-menu,
+.header-middle .horizontal-list a,
+.header-middle .menu-item a,
+.header-middle .navigation a {
+  color: white !important;
+  fill: white !important;
+}
+
+#page-header .horizontal-list a:hover,
+#page-header .menu-item a:hover,
+#page-header .navigation a:hover,
+#sticky-header .horizontal-list a:hover,
+#sticky-header .menu-item a:hover,
+#sticky-header .navigation a:hover,
+.header-middle .horizontal-list a:hover,
+.header-middle .menu-item a:hover,
+.header-middle .navigation a:hover {
+  color: #e2e8f0 !important;
+}
+
+#page-header svg,
+#page-header .icon,
+#page-header i,
+#sticky-header svg,
+#sticky-header .icon,
+#sticky-header i,
+.header-middle svg,
+.header-middle .icon,
+.header-middle i {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Sticky Header - Maintain Same Styling */
+#sticky-header {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+  color: white !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#sticky-header * {
+  color: white !important;
+}
+
+/* Override any sticky header background changes */
+.page-header.sticky,
+.page-header.header_scroll_down,
+.page-header.h-sticky {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+  color: white !important;
+}
+
+.page-header.sticky *,
+.page-header.header_scroll_down *,
+.page-header.h-sticky * {
+  color: white !important;
+}
+
+/* Force header styling in all states */
+.page-header,
+.page-header.h-transparent,
+.page-header.h-transparent.header_scroll_down,
+.page-header.h-transparent.sticky {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+  color: white !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.page-header *,
+.page-header.h-transparent *,
+.page-header.h-transparent.header_scroll_down *,
+.page-header.h-transparent.sticky * {
+  color: white !important;
+}
+
+/* Override any theme default header colors */
+.page-header[style*="background"] {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+}
+
+/* ========================================
+   FASHION STORE TYPOGRAPHY
+   ======================================== */
+
+/* Apply Fashion Fonts to Entire Store */
+body, html {
+  font-family: var(--fashion-font-primary) !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+}
+
+/* Headings - Use Elegant Serif Font */
+h1, h2, h3, h4, h5, h6,
+.heading, .title, .page-title,
+.product-title, .collection-title,
+.blog-title, .article-title {
+  font-family: var(--fashion-font-heading) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.2 !important;
+}
+
+/* Navigation and Menu Items */
+.navigation, .menu, .nav,
+.horizontal-list, .menu-item,
+.navbar, .header-nav {
+  font-family: var(--fashion-font-primary) !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* Buttons */
+.btn, .button, .button-primary, .button-secondary {
+  font-family: var(--fashion-font-primary) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: uppercase !important;
+}
+
+/* Product Information */
+.product-price, .price, .money,
+.product-title, .product-description,
+.product-vendor, .product-type {
+  font-family: var(--fashion-font-primary) !important;
+}
+
+/* Forms */
+input, textarea, select, .form-control {
+  font-family: var(--fashion-font-primary) !important;
+  font-weight: 400 !important;
+}
+
+/* Footer */
+.footer, .footer * {
+  font-family: var(--fashion-font-primary) !important;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+  font-family: var(--fashion-font-heading) !important;
+}
+
+/* Logo and Brand */
+.logo, .site-logo, .text-logo {
+  font-family: var(--fashion-font-heading) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+/* CRITICAL: Override the sticky header background that gets applied by JavaScript */
+.header_scroll_down #sticky-header {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+  background-color: transparent !important;
+}
+
+/* Override the CSS variable that controls sticky header background */
+:root {
+  --sticky-header-bg: transparent !important;
+}
+
+/* Force override any background-color that might be applied */
+#sticky-header[style*="background-color"] {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 50%, #718096 100%) !important;
+  background-color: transparent !important;
+}
+
+
+/* Top Bar Text and Icons */
+.topbar {
+  color: white !important;
+}
+
+.topbar * {
+  color: white !important;
+}
+
+.topbar a {
+  color: white !important;
+}
+
+.topbar a:hover {
+  color: #e2e8f0 !important;
+}
+
+.header-container {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 0 0 25px 25px !important;
+  padding: 1rem 0 !important;
+}
+
+.header-middle {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(15px) !important;
+  border-radius: 20px !important;
+  padding: 2rem 0 !important;
+  margin: 1rem 0 !important;
+  min-height: 80px !important;
+}
+
+/* Force Footer Visibility */
+.footer {
+  background: var(--fashion-gradient-4) !important;
+  min-height: 400px !important;
+  border-top: 5px solid var(--fashion-primary) !important;
+  margin-top: 5rem !important;
+}
+
+/* Override any existing header/footer styles */
+.page-header, .header-container, .header-middle, .topbar {
+  background: var(--fashion-gradient-1) !important;
+  color: var(--fashion-neutral-1) !important;
+}
+
+.footer, .bls__footer-bottom {
+  background: var(--fashion-gradient-4) !important;
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header {
+    border-radius: 0 0 20px 20px !important;
+    min-height: 100px !important;
+  }
+  
+  .header-middle {
+    padding: 1rem 0 !important;
+    min-height: 60px !important;
+  }
+  
+  .footer-section, .footer-block, .widget {
+    margin: 0.5rem 0 !important;
+    padding: 1.5rem !important;
+  }
+  
+  .navigation {
+    padding: 0.5rem 1rem !important;
+  }
+  
+  .horizontal-list li a, .menu-item a {
+    padding: 0.8rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .footer {
+    min-height: 300px !important;
+  }
 }
 
 #contact_form,
