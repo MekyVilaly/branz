@@ -160,7 +160,7 @@
                 <div class="col-header-center col-menu-center bls_submenu-center">
                   {%- liquid
                     if top_search
-                      render 'top-search' | layout4: true
+                      render 'top-search', layout4: true
                     endif
                   -%}
                 </div>
@@ -249,3 +249,13 @@ document.addEventListener('DOMContentLoaded', function() {
     "url": {{ request.origin | append: page.url | json }}
   }
 </script>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "                      render 'top-search' | layout4: true"
+  to: "                      render 'top-search', layout4: true"
+  position: 6530..6586
+{% endcomment %}
